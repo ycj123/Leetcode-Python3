@@ -18,4 +18,5 @@ class Solution:
             res[i] = right*res[i]
         return res
 # @lc code=end
-
+# only use output array
+# memory left multi res and right multi res

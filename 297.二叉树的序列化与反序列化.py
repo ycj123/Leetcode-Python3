@@ -22,15 +22,15 @@ class Codec:
         """
         res = []
         if not root:
-            return res
+            return ''
         queue = [root]
-        while queue:
+        while queue:#bfs
             curr = queue.pop(0)
             if curr:
                 res.append(str(curr.val))
                 queue.append(curr.left)
                 queue.append(curr.right)
-            else:
+            else:#empty node
                 res.append('X')
         return ','.join(res)
 
